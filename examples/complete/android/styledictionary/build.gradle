@@ -1,11 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 30
+   namespace = "com.amazon.styledictionary"
+    compileSdk 33
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 30
+        minSdkVersion 24
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
 
@@ -21,8 +22,6 @@ android {
 }
 
 dependencies {
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     testImplementation 'junit:junit:4.13.2'
 }
