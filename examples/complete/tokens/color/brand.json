@@ -5,8 +5,11 @@
         "lighter": { "value": "{color.base.teal.100.value}" },
         "light":   { "value": "{color.base.teal.300.value}" },
         "base":    { "value": "{color.base.teal.500.value}" },
-        "dark":    { "value": "{color.base.teal.700.value}" },
+        
+        "dark":    { "value": "{color.base.red.700.value}" },
         "darker":  { "value": "{color.base.teal.900.value}" }
+
+
       },
 
       "secondary": {
@@ -15,6 +18,10 @@
         "base":    { "value": "{color.base.indigo.500.value}" },
         "dark":    { "value": "{color.base.indigo.700.value}" },
         "darker":  { "value": "{color.base.indigo.900.value}" }
+      }
+      , "label": {
+      
+        "light":   { "value": "{color.base.white}" }
       }
     }
   }

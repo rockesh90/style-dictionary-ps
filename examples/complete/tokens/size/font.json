@@ -8,7 +8,9 @@
       "xl"    : { "value": "1.5" },
       "xxl"   : { "value": "2" },
       "xxxl"  : { "value": "3" },
-      "base"  : { "value": "{size.font.medium.value}" }
+
+      "base"  : { "value": "{size.font.tiny.value}" }
+
     }
   }
 }

@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.amazon.styledictionaryexample.BaseActivity
 import com.amazon.styledictionaryexample.R
-import com.amazon.styledictionaryexample.models.Property
+import models.Property
 import com.amazon.styledictionaryexample.util.StyleDictionaryHelper
 import java.util.*
 

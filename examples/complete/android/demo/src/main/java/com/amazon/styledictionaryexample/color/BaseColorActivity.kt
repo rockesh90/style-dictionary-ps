@@ -23,7 +23,7 @@ import com.amazon.styledictionaryexample.R
 import com.amazon.styledictionary.R as CR
 import com.amazon.styledictionaryexample.color.BaseColorListItem.BaseColorHeaderItem
 import com.amazon.styledictionaryexample.color.BaseColorListItem.BaseColorItem
-import com.amazon.styledictionaryexample.models.StyleDictionaryNode
+import models.StyleDictionaryNode
 import com.amazon.styledictionaryexample.util.StyleDictionaryHelper
 import java.util.*
 

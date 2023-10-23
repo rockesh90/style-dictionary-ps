@@ -14,7 +14,7 @@
  */
 package com.amazon.styledictionaryexample.color
 
-import com.amazon.styledictionaryexample.models.Property
+import models.Property
 
 interface BaseColorListItem {
   val isHeader: Boolean

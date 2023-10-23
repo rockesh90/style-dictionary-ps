@@ -99,6 +99,33 @@
       }]
     },
 
+    "compose": {
+      "transformGroup": "compose",
+      "buildPath": "android/styledictionary/src/main/kotlin/compose/amazon/styledictionary/",
+      "files": [{
+        "destination": "StyleDictionaryColor.kt",
+        "format": "compose/object",
+        "className": "StyleDictionaryColor",
+        "packageName": "compose.amazon.styledictionary",
+        "filter": {
+          "attributes": {
+            "category": "color"
+          }
+        }
+      },{
+        "destination": "StyleDictionarySize.kt",
+        "format": "compose/object",
+        "className": "StyleDictionarySize",
+        "packageName": "compose.amazon.styledictionary",
+        "type": "float",
+        "filter": {
+          "attributes": {
+            "category": "size"
+          }
+        }
+      }]
+    },
+
     "android-asset": {
       "transformGroup": "android",
       "buildPath": "android/styledictionary/src/main/",
