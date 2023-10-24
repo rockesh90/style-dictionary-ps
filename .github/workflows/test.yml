@@ -1,15 +1,24 @@
-name: Test
+name: Test Style Dictionary PL
 
-on: issue_comment
+on: 
+  pull_request_review_comment:
+    types: [created]
 
 jobs:
-  pr_commented:
-    # This job only runs for pull request comments
-    name: PR comment
-    if: ${{ github.event.issue.pull_request }}
+  install_style_dictionary:
+    name: Install Style Dictionary
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          echo A comment on PR $NUMBER
-        env:
-          NUMBER: ${{ github.event.issue.number }}
+      - name: Checkout Branch
+        uses: actions/checkout@v4
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.13.x
+          cache: npm
+      - name: Install Dependencies
+        run: npm ci
+      - name: Install Style Dictionary
+        run: npm install -g style-dictionary
+      - name: Echo Completion
+        run: echo  "Completion"
