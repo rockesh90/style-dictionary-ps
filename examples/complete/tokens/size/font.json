@@ -1,7 +1,7 @@
 {
   "size": {
     "font": {
-      "tiny"  : { "value": "0.75" },
+      "tiny"  : { "value": "0.76" },
       "small" : { "value": "0.875" },
       "medium": { "value": "1" },
       "large" : { "value": "1.25" },
