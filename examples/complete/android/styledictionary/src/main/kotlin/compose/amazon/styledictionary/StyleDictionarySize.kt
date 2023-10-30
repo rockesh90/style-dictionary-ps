@@ -1,7 +1,8 @@
 
 
 // Do not edit directly
-// Generated on Mon, 30 Oct 2023 14:03:54 GMT
+// Generated on Mon, 30 Oct 2023 15:24:22 GMT
+
 
 
 package compose.amazon.styledictionary;

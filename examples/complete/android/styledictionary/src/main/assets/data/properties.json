@@ -26658,11 +26658,11 @@
   "size": {
     "font": {
       "tiny": {
-        "value": "11.20sp",
+        "value": "12.80sp",
         "filePath": "tokens/size/font.json",
         "isSource": true,
         "original": {
-          "value": "0.70"
+          "value": "0.80"
         },
         "name": "size_font_tiny",
         "attributes": {
@@ -26791,7 +26791,7 @@
         ]
       },
       "base": {
-        "value": "11.20sp",
+        "value": "12.80sp",
         "filePath": "tokens/size/font.json",
         "isSource": true,
         "original": {
