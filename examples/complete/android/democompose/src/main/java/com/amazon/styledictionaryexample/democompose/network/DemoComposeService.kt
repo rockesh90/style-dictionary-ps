@@ -5,6 +5,6 @@ import retrofit2.http.GET
 
 interface DemoComposeService {
 
-  @GET("get")
+  @GET("assets/data/properties.json")
   suspend fun retrieveStyleJson(): Response<String>
 }
