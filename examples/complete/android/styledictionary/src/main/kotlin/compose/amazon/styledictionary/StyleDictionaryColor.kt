@@ -3,8 +3,6 @@
 // Do not edit directly
 // Generated on Mon, 30 Oct 2023 14:03:54 GMT
 
-
-
 package compose.amazon.styledictionary;
 
 import androidx.compose.ui.graphics.Color

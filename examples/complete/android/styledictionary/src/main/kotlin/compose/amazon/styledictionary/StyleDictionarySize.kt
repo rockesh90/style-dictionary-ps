@@ -4,18 +4,17 @@
 // Generated on Mon, 30 Oct 2023 14:03:54 GMT
 
 
-
 package compose.amazon.styledictionary;
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.*
 
 object StyleDictionarySize {
-  val sizeFontBase = 11.20.sp
+  val sizeFontBase = 12.80.sp
   val sizeFontLarge = 20.00.sp
   val sizeFontMedium = 16.00.sp
   val sizeFontSmall = 14.00.sp
-  val sizeFontTiny = 11.20.sp
+  val sizeFontTiny = 12.80.sp
   val sizeFontXl = 24.00.sp
   val sizeFontXxl = 32.00.sp
   val sizeFontXxxl = 48.00.sp

@@ -9,6 +9,8 @@ jobs:
     name: Install Style Dictionary
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v4
@@ -23,5 +25,8 @@ jobs:
         run: npm install -g style-dictionary
       - name: Build Style Dictionary Json
         run: cd examples/complete/ && style-dictionary build
-      - name: Echo Completion
-        run: echo  "Completion"
+      - name: Auto Commit
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Generated Dictionary Auto-Commit
+          branch: main
