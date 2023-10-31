@@ -1,7 +1,7 @@
 
 
 // Do not edit directly
-// Generated on Tue, 31 Oct 2023 16:07:13 GMT
+// Generated on Tue, 31 Oct 2023 16:14:59 GMT
 
 
 
@@ -21,7 +21,7 @@ object StyleDictionaryColor {
   val colorBackgroundButtonSecondaryDisabled = Color(0xff7986cb)
   val colorBackgroundDisabled = Color(0xffcfd8dc)
   val colorBackgroundError = Color(0xffe53935)
-  val colorBackgroundInfo = Color(0xffc92af7)
+  val colorBackgroundInfo = Color(0xff419488)
   val colorBackgroundInverse = Color(0xff263238)
   val colorBackgroundLink = Color(0xff039be5)
   val colorBackgroundLowPriority = Color(0xff757575)
@@ -78,7 +78,7 @@ object StyleDictionaryColor {
   val colorBaseBrown700 = Color(0xff5d4037)
   val colorBaseBrown800 = Color(0xff4e342e)
   val colorBaseBrown900 = Color(0xff3e2723)
-  val colorBaseCard = Color(0xffc92af7)
+  val colorBaseCard = Color(0xff419488)
   val colorBaseCyan100 = Color(0xffb2ebf2)
   val colorBaseCyan200 = Color(0xff80deea)
   val colorBaseCyan300 = Color(0xff4dd0e1)
