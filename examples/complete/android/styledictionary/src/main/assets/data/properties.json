@@ -362,7 +362,7 @@
         ]
       },
       "info": {
-        "value": "#ffc92af7",
+        "value": "#ff419488",
         "attributes": {
           "font": "inverse",
           "category": "color",
@@ -621,7 +621,7 @@
     },
     "base": {
       "card": {
-        "value": "#ffc92af7",
+        "value": "#ff419488",
         "attributes": {
           "font": "base",
           "category": "color",
@@ -631,7 +631,7 @@
         "filePath": "tokens/color/base.json",
         "isSource": true,
         "original": {
-          "value": "#C92AF7",
+          "value": "#419488",
           "attributes": {
             "font": "base"
           }
