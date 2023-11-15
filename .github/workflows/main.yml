@@ -4,6 +4,8 @@ on:
   pull_request:
     branches: [main]
     types: [closed]
+  pull_request_review_comment:
+    types: [created]
 jobs:
   install_style_dictionary:
     name: Install Style Dictionary
@@ -30,3 +32,12 @@ jobs:
         with:
           commit_message: Generated Dictionary Auto-Commit
           branch: main
+      - name: Publish to Artifactory
+        uses: jfrog/setup-jfrog-cli@v3
+        env:
+          # JFrog platform url (for example: https://acme.jfrog.io) 
+          JF_URL: ${{ secrets.JF_URL }}
+          # JFrog Platform access token
+          JF_ACCESS_TOKEN: ${{ secrets.JF_TOKEN }}
+      - run: | 
+          jf rt ping
