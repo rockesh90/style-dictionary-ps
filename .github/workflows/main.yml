@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [main]
     types: [closed]
-  pull_request_review:
+  issue_comment:
     branches: [main]
     types: [edited]
 jobs:
