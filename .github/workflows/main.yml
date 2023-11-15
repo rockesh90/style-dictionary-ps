@@ -4,9 +4,9 @@ on:
   pull_request:
     branches: [main]
     types: [closed]
-  pull_request_review_comment:
+  pull_request_review:
     branches: [main]
-    types: [created]
+    types: [edited]
 jobs:
   install_style_dictionary:
     name: Install Style Dictionary
