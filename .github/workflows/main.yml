@@ -6,11 +6,11 @@ on:
     types: [closed]
   issue_comment:
     branches: [main]
-    types: [edited]
+    types: [edited, created]
 jobs:
   install_style_dictionary:
     name: Install Style Dictionary
-    if: github.event.pull_request.merged == true
+    # if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     permissions:
       contents: write
