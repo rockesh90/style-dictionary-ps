@@ -47,4 +47,4 @@ jobs:
           export BUILD_MODULE="my-module"
           export BUILD_NUMBER="1"
           export PATH_TO_DIRECTORY="name/version/dates"
-          jf rt upload "test.txt" example-repo-local/$PATH_TO_DIRECTORY --build-name $BUILD_NAME --build-number $BUILD_NUMBER --module $BUILD_MODULE
+          jf rt upload "test.txt" dspoc-repository/$PATH_TO_DIRECTORY --build-name $BUILD_NAME --build-number $BUILD_NUMBER --module $BUILD_MODULE
