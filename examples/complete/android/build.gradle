@@ -3,25 +3,64 @@
 buildscript {
   ext.kotlin_version = '1.8.10'
   repositories {
-        mavenCentral()
-        google()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.1.0'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    google()
+    mavenCentral()
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:8.1.0'
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-    }
+    classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.29.2"
+
+    // NOTE: Do not place your application dependencies here; they belong
+    // in the individual module build.gradle files
+  }
 }
 
 allprojects {
-    repositories {
-        google()
-        mavenCentral()
+  apply plugin: "com.jfrog.artifactory"
+  apply plugin: "maven-publish"
+  repositories {
+    mavenCentral()
+    google()
+  }
+}
+
+artifactory {
+  contextUrl = "https://5fcd-73-224-164-228.ngrok-free.app/artifactory"
+  publish {
+    repository {
+      repoKey = "dspoc-repository"
+      username = "admin"
+      password = "AKCpBrv6eQfw89MYUV7YtdZJjaaKojh2imJTSaFZe3ej95XBWG5aEHtAJUxroWrQZ8f4iCs2U"
+      maven = true
     }
+    defaults {
+      publishArtifacts = true
+      publishPom = true
+    }
+  }
+}
+
+project("dspoclibrary") {
+  artifactoryPublish.dependsOn("assemble")
+
+  publishing {
+    publications {
+      aar(MavenPublication) {
+        artifactId = "dspoclibrary"
+        groupId = "dspoc"
+        version = "v1.0.1"
+        artifact("$buildDir/outputs/aar/${project.getName()}-release.aar")
+      }
+    }
+  }
+
+  artifactoryPublish {
+    publications(publishing.publications.aar)
+  }
 }
 
 task clean(type: Delete) {
-    delete rootProject.buildDir
+  delete rootProject.buildDir
 }
