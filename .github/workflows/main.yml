@@ -34,7 +34,7 @@ jobs:
           commit_message: Generated Dictionary Auto-Commit
           branch: main
       - name: Publish library to artifactory
-        run: cd android/ && ./gradlew artifactoryPublish
+        run: cd examples/complete/android/ && ./gradlew artifactoryPublish
       # - name: Publish to Artifactory
       #   uses: jfrog/setup-jfrog-cli@v3
       #   env:
