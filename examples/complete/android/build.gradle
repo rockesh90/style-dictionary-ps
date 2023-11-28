@@ -64,7 +64,7 @@ project("dspoclibrary") {
       aar(MavenPublication) {
         artifactId = "dspoclibrary"
         groupId = "dspoc"
-        version = "v1.0.2"
+        version = "v1.0.3"
         artifact("$buildDir/outputs/aar/${project.getName()}-release.aar")
       }
     }
