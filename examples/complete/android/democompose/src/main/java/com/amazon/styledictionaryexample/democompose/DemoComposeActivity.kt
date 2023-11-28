@@ -14,8 +14,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -35,26 +33,23 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.amazon.styledictionaryexample.democompose.ui.DemoComposeActivityViewModel
-import com.amazon.styledictionaryexample.democompose.ui.model.DemoComposeUiState
-import com.amazon.styledictionaryexample.democompose.ui.model.ErrorState
 import com.amazon.styledictionaryexample.democompose.ui.theme.AndroidTheme
+import com.dspoclibrary.DSPOCButton
 import kotlinx.coroutines.launch
 
 class DemoComposeActivity : ComponentActivity() {
-  private val activityViewModel = DemoComposeActivityViewModel(
-    DemoComposeApplication.instance,
-    DemoComposeApplication.instance.demoComposeService,
-  )
+
+  private val activityViewModel = ActivityViewModel()
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContent {
-      val uistate = activityViewModel.uiState.collectAsState(
-        initial = DemoComposeUiState(
+      val uiState = activityViewModel.uiState.collectAsState(
+        initial = ActivityUiState(
           loadStyle = { activityViewModel.loadJson() },
         ),
       ).value
+      val onResumePause = activityViewModel.onResume.collectAsState(initial = true).value
       activityViewModel.errorState.collectAsState(initial = ErrorState()).value
       AndroidTheme {
         // A surface container using the 'background' color from the theme
@@ -62,7 +57,7 @@ class DemoComposeActivity : ComponentActivity() {
           modifier = Modifier.fillMaxSize(),
           color = MaterialTheme.colorScheme.background,
         ) {
-          Greeting(uiState = uistate) { it ->
+          POCCard(uiState = uiState, onResumePause = onResumePause) { it ->
             showToastMessage(it)
           }
         }
@@ -73,11 +68,22 @@ class DemoComposeActivity : ComponentActivity() {
   private fun showToastMessage(message: String) {
     Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
   }
+
+  override fun onPause() {
+    super.onPause()
+    activityViewModel.onPause()
+  }
+
+  override fun onResume() {
+    super.onResume()
+    activityViewModel.onResume()
+  }
 }
 
 @Composable
-fun Greeting(
-  uiState: DemoComposeUiState,
+fun POCCard(
+  uiState: ActivityUiState,
+  onResumePause: Boolean,
   errorMessage: (String) -> Unit,
 ) {
   val coroutine = rememberCoroutineScope()
@@ -108,7 +114,8 @@ fun Greeting(
           val leftRightFade =
             Brush.horizontalGradient(0.38f to Color.Red, 1f to Color.Transparent)
           Box(
-            modifier = Modifier.fadingEdge(leftRightFade).background(uiState.backgroundColor).fillMaxSize(),
+            modifier = Modifier.fadingEdge(leftRightFade).background(uiState.backgroundColor)
+              .fillMaxSize(),
           )
           Column(
             modifier = Modifier.padding(all = 24.dp),
@@ -130,23 +137,21 @@ fun Greeting(
               ),
             )
             Spacer(modifier = Modifier.height(5.dp))
-            Button(
-              colors = ButtonDefaults.buttonColors(
-                containerColor = uiState.buttonBackgroundColor,
-              ),
+            DSPOCButton(
+              reload = onResumePause,
+              title = "Get Started".uppercase(),
               onClick = {},
-            ) {
-              Text(text = "Get Started".uppercase(), color = uiState.buttonTextColor)
-            }
+            )
           }
         }
       }
-      Spacer(modifier = Modifier.height(height = 5.dp))
-      Button(onClick = {
-        uiState.loadStyle()
-      }) {
-        Text(text = "Reload Style")
-      }
+      Spacer(modifier = Modifier.height(5.dp))
+      DSPOCButton(
+        title = "Reload Json".uppercase(),
+        onClick = {
+          uiState.loadStyle()
+        },
+      )
     }
   }
 }
@@ -160,8 +165,8 @@ fun Modifier.fadingEdge(brush: Brush) = this
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun POCCardPreview() {
   AndroidTheme {
-    Greeting(uiState = DemoComposeUiState(loadStyle = {}, error = "Error loading style")) {}
+    POCCard(uiState = ActivityUiState(loadStyle = {}, error = "Error loading style"), onResumePause = false) {}
   }
 }

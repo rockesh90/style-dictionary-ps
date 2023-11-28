@@ -5,6 +5,13 @@ buildscript {
   repositories {
     google()
     mavenCentral()
+    maven {
+      url 'https://4d1d-73-224-164-228.ngrok-free.app/artifactory/dspoc-repository/'
+      credentials {
+        username = "admin"
+        password = "AKCpBrv6eQfw89MYUV7YtdZJjaaKojh2imJTSaFZe3ej95XBWG5aEHtAJUxroWrQZ8f4iCs2U"
+      }
+    }
   }
   dependencies {
     classpath 'com.android.tools.build:gradle:8.1.0'
@@ -23,11 +30,18 @@ allprojects {
   repositories {
     mavenCentral()
     google()
+    maven {
+      url 'https://4d1d-73-224-164-228.ngrok-free.app/artifactory/dspoc-repository/'
+      credentials {
+        username = "admin"
+        password = "AKCpBrv6eQfw89MYUV7YtdZJjaaKojh2imJTSaFZe3ej95XBWG5aEHtAJUxroWrQZ8f4iCs2U"
+      }
+    }
   }
 }
 
 artifactory {
-  contextUrl = "https://5fcd-73-224-164-228.ngrok-free.app/artifactory"
+  contextUrl = "https://4d1d-73-224-164-228.ngrok-free.app/artifactory"
   publish {
     repository {
       repoKey = "dspoc-repository"
@@ -50,7 +64,7 @@ project("dspoclibrary") {
       aar(MavenPublication) {
         artifactId = "dspoclibrary"
         groupId = "dspoc"
-        version = "v1.0.1"
+        version = "v1.0.2"
         artifact("$buildDir/outputs/aar/${project.getName()}-release.aar")
       }
     }

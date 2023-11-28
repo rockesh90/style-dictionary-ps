@@ -5,7 +5,7 @@ plugins {
 
 android {
   namespace = "com.amazon.styledictionaryexample.democompose"
-  compileSdk = 33
+  compileSdk = 34
 
   defaultConfig {
     applicationId = "com.amazon.styledictionaryexample.democompose"
@@ -40,7 +40,7 @@ android {
     compose = true
   }
   composeOptions {
-    kotlinCompilerExtensionVersion = "1.4.3"
+    kotlinCompilerExtensionVersion = "1.4.4"
   }
   packaging {
     resources {
@@ -51,7 +51,9 @@ android {
 
 dependencies {
 
-  implementation(project(":styledictionary"))
+  //  debugImplementation(files("../dspoclibrary/build/outputs/aar/dspoclibrary-debug.aar"))
+  debugImplementation("dspoc:dspoclibrary:v1.0.2")
+  debugImplementation(project(":styledictionary"))
   implementation("androidx.core:core-ktx:1.9.0")
   implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
   implementation("androidx.activity:activity-compose:1.7.2")

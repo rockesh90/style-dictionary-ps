@@ -1,24 +1,25 @@
-package com.amazon.styledictionaryexample.democompose.ui
+package com.dspoclibrary
 
-import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.amazon.styledictionaryexample.democompose.DemoComposeApplication
-import com.amazon.styledictionaryexample.democompose.network.DemoComposeService
-import com.amazon.styledictionaryexample.democompose.ui.model.DemoComposeUiState
-import com.amazon.styledictionaryexample.democompose.ui.model.ErrorState
+import com.dspoclibrary.network.DemoComposeService
 import kotlinx.coroutines.channels.BufferOverflow
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.launch
+import retrofit2.Retrofit
+import retrofit2.converter.scalars.ScalarsConverterFactory
 import utils.StyleDictionaryHelper
 
-class DemoComposeActivityViewModel(
-  application: DemoComposeApplication,
-  private val demoComposeService: DemoComposeService,
-) :
-  AndroidViewModel(application = application) {
-  private val _uiState = MutableSharedFlow<DemoComposeUiState>()
+class POCButtonViewModel :
+  ViewModel() {
+  private val _uiState = MutableSharedFlow<POCButtonUiState>()
   val uiState = _uiState
+
+  private val demoComposeService: DemoComposeService = Retrofit
+    .Builder().baseUrl("https://raw.githubusercontent.com/alereyes2/style-dictionary-ps/main/examples/complete/android/styledictionary/src/main/").addConverterFactory(
+      ScalarsConverterFactory.create(),
+    ).build().create(DemoComposeService::class.java)
 
   private val _errorSate = MutableSharedFlow<ErrorState>(
     replay = 1,
@@ -26,10 +27,6 @@ class DemoComposeActivityViewModel(
     extraBufferCapacity = 10,
   )
   val errorState = _errorSate.asSharedFlow()
-
-  init {
-    loadJson()
-  }
 
   fun loadJson() {
     viewModelScope.launch {
@@ -41,7 +38,7 @@ class DemoComposeActivityViewModel(
         )
       } catch (e: Exception) {
         _uiState.emit(
-          DemoComposeUiState(
+          POCButtonUiState(
             loadStyle = { loadJson() },
             error = "Error loading style",
           ),
@@ -50,7 +47,7 @@ class DemoComposeActivityViewModel(
     }
   }
 
-  private fun demoComposeUiStateWithValues() = DemoComposeUiState(
+  private fun demoComposeUiStateWithValues() = POCButtonUiState(
     buttonBackgroundColor = StyleDictionaryHelper.loadButtonBackgroundColor(),
     backgroundColor = StyleDictionaryHelper.loadBackgroundColor(),
     mediumFontSize = StyleDictionaryHelper.loadMediumFontSize(),
