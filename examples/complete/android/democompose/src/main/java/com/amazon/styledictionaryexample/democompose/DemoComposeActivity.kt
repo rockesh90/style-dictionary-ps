@@ -131,7 +131,7 @@ fun POCCard(
             Spacer(modifier = Modifier.height(5.dp))
             Text(
               text = "Do your laundry from anywhere at your convenience",
-              color = uiState.labelTextColor,
+              color = Color.White,
               style = MaterialTheme.typography.bodyMedium.copy(
                 fontSize = uiState.mediumFontSize,
               ),

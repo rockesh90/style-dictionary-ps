@@ -1,15 +1,15 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-
 buildscript {
+  apply from: 'jfrog-constants.gradle'
   ext.kotlin_version = '1.8.10'
   repositories {
     google()
     mavenCentral()
     maven {
-      url 'https://4d1d-73-224-164-228.ngrok-free.app/artifactory/dspoc-repository/'
+      url project.ext.jfrogRepositoryUrl
       credentials {
-        username = "admin"
-        password = "AKCpBrv6eQfw89MYUV7YtdZJjaaKojh2imJTSaFZe3ej95XBWG5aEHtAJUxroWrQZ8f4iCs2U"
+        username = project.ext.jfrogUser
+        password = project.ext.jfrogAdminToken
       }
     }
   }
@@ -31,22 +31,22 @@ allprojects {
     mavenCentral()
     google()
     maven {
-      url 'https://4d1d-73-224-164-228.ngrok-free.app/artifactory/dspoc-repository/'
+      url rootProject.ext.jfrogRepositoryUrl
       credentials {
-        username = "admin"
-        password = "AKCpBrv6eQfw89MYUV7YtdZJjaaKojh2imJTSaFZe3ej95XBWG5aEHtAJUxroWrQZ8f4iCs2U"
+        username = rootProject.ext.jfrogUser
+        password = rootProject.ext.jfrogAdminToken
       }
     }
   }
 }
 
 artifactory {
-  contextUrl = "https://4d1d-73-224-164-228.ngrok-free.app/artifactory"
+  contextUrl = rootProject.ext.jfrogContextUrl
   publish {
     repository {
-      repoKey = "dspoc-repository"
-      username = "admin"
-      password = "AKCpBrv6eQfw89MYUV7YtdZJjaaKojh2imJTSaFZe3ej95XBWG5aEHtAJUxroWrQZ8f4iCs2U"
+      repoKey = rootProject.ext.jfrogRepoKey
+      username = rootProject.ext.jfrogUser
+      password = rootProject.ext.jfrogAdminToken
       maven = true
     }
     defaults {
@@ -62,9 +62,9 @@ project("dspoclibrary") {
   publishing {
     publications {
       aar(MavenPublication) {
-        artifactId = "dspoclibrary"
-        groupId = "dspoc"
-        version = "v1.0.3"
+        artifactId = rootProject.ext.dspocLibraryArtifactId
+        groupId = rootProject.ext.dspocLibraryGroupId
+        version = rootProject.ext.dspocLibraryVersion
         artifact("$buildDir/outputs/aar/${project.getName()}-release.aar")
       }
     }
