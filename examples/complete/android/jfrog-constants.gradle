@@ -1,7 +1,7 @@
 ext {
   jfrogUser  = "admin"
-  jfrogRepositoryUrl  = 'https://4d1d-73-224-164-228.ngrok-free.app/artifactory/dspoc-repository/'
-  jfrogContextUrl  = "https://4d1d-73-224-164-228.ngrok-free.app/artifactory"
+  jfrogRepositoryUrl  = 'https://776f-73-224-164-228.ngrok-free.app/artifactory/dspoc-repository/'
+  jfrogContextUrl  = "https://776f-73-224-164-228.ngrok-free.app/artifactory"
   jfrogAdminToken = "AKCpBrv6eQfw89MYUV7YtdZJjaaKojh2imJTSaFZe3ej95XBWG5aEHtAJUxroWrQZ8f4iCs2U"
   jfrogRepoKey = "dspoc-repository"
 
