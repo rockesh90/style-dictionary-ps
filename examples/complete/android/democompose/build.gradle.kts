@@ -51,8 +51,9 @@ android {
 
 dependencies {
 
-  //  debugImplementation(files("../dspoclibrary/build/outputs/aar/dspoclibrary-debug.aar"))
-  debugImplementation("dspoc:dspoclibrary:v1.0.3")
+//  debugImplementation(files("../dspoclibrary/build/outputs/aar/dspoclibrary-debug.aar"))
+//  debugImplementation("dspoc:dspoclibrary:1.0.0")
+  debugImplementation(project(":dspoclibrary"))
   debugImplementation(project(":styledictionary"))
   implementation("androidx.core:core-ktx:1.9.0")
   implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")

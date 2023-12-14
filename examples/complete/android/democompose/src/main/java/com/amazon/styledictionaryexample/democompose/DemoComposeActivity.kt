@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -44,20 +45,14 @@ class DemoComposeActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContent {
-      val uiState = activityViewModel.uiState.collectAsState(
-        initial = ActivityUiState(
-          loadStyle = { activityViewModel.loadJson() },
-        ),
-      ).value
-      val onResumePause = activityViewModel.onResume.collectAsState(initial = true).value
-      activityViewModel.errorState.collectAsState(initial = ErrorState()).value
+      val uiState = activityViewModel.uiState.collectAsState().value
       AndroidTheme {
         // A surface container using the 'background' color from the theme
         Surface(
           modifier = Modifier.fillMaxSize(),
           color = MaterialTheme.colorScheme.background,
         ) {
-          POCCard(uiState = uiState, onResumePause = onResumePause) { it ->
+          POCCard(uiState = uiState) { it ->
             showToastMessage(it)
           }
         }
@@ -68,26 +63,15 @@ class DemoComposeActivity : ComponentActivity() {
   private fun showToastMessage(message: String) {
     Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
   }
-
-  override fun onPause() {
-    super.onPause()
-    activityViewModel.onPause()
-  }
-
-  override fun onResume() {
-    super.onResume()
-    activityViewModel.onResume()
-  }
 }
 
 @Composable
 fun POCCard(
   uiState: ActivityUiState,
-  onResumePause: Boolean,
   errorMessage: (String) -> Unit,
 ) {
   val coroutine = rememberCoroutineScope()
-
+  val buttonUiState = uiState.buttonStyle
   uiState.error?.let {
     coroutine.launch {
       errorMessage(it)
@@ -114,7 +98,7 @@ fun POCCard(
           val leftRightFade =
             Brush.horizontalGradient(0.38f to Color.Red, 1f to Color.Transparent)
           Box(
-            modifier = Modifier.fadingEdge(leftRightFade).background(uiState.backgroundColor)
+            modifier = Modifier.fadingEdge(leftRightFade).background(buttonUiState.backgroundColor)
               .fillMaxSize(),
           )
           Column(
@@ -123,9 +107,9 @@ fun POCCard(
           ) {
             Text(
               text = "Connect and Wash",
-              color = uiState.labelTextColor,
+              color = Color.White,
               style = MaterialTheme.typography.titleMedium.copy(
-                fontSize = uiState.largeFontSize,
+                fontSize = buttonUiState.largeFontSize,
               ),
             )
             Spacer(modifier = Modifier.height(5.dp))
@@ -133,25 +117,26 @@ fun POCCard(
               text = "Do your laundry from anywhere at your convenience",
               color = Color.White,
               style = MaterialTheme.typography.bodyMedium.copy(
-                fontSize = uiState.mediumFontSize,
+                fontSize = buttonUiState.mediumFontSize,
               ),
             )
             Spacer(modifier = Modifier.height(5.dp))
             DSPOCButton(
-              reload = onResumePause,
-              title = "Get Started".uppercase(),
+              buttonUiState = buttonUiState,
+              title = "GET STARTED",
               onClick = {},
             )
           }
         }
       }
       Spacer(modifier = Modifier.height(5.dp))
-      DSPOCButton(
-        title = "Reload Json".uppercase(),
+      Button(
         onClick = {
           uiState.loadStyle()
         },
-      )
+      ) {
+        Text(text = "Reload Json".uppercase())
+      }
     }
   }
 }
@@ -167,6 +152,6 @@ fun Modifier.fadingEdge(brush: Brush) = this
 @Composable
 fun POCCardPreview() {
   AndroidTheme {
-    POCCard(uiState = ActivityUiState(loadStyle = {}, error = "Error loading style"), onResumePause = false) {}
+    POCCard(uiState = ActivityUiState(loadStyle = {}, error = "Error loading style")) {}
   }
 }

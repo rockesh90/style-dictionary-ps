@@ -1,4 +1,4 @@
-package com.dspoclibrary.network
+package com.amazon.styledictionaryexample.democompose.network
 
 import retrofit2.Response
 import retrofit2.http.GET
