@@ -26613,6 +26613,2118 @@
       }
     }
   },
+  "core": {
+    "400": {
+      "value": "#f687b3",
+      "type": "color",
+      "filePath": "tokens/figma-design-token/tokens.json",
+      "isSource": true,
+      "original": {
+        "value": "#f687b3",
+        "type": "color"
+      },
+      "name": "core_400",
+      "attributes": {
+        "category": "core",
+        "type": "400"
+      },
+      "path": [
+        "core",
+        "400"
+      ]
+    },
+    "500": {
+      "value": "#ed64a6",
+      "type": "color",
+      "filePath": "tokens/figma-design-token/tokens.json",
+      "isSource": true,
+      "original": {
+        "value": "#ed64a6",
+        "type": "color"
+      },
+      "name": "core_500",
+      "attributes": {
+        "category": "core",
+        "type": "500"
+      },
+      "path": [
+        "core",
+        "500"
+      ]
+    },
+    "600": {
+      "value": "#d53f8c",
+      "type": "color",
+      "filePath": "tokens/figma-design-token/tokens.json",
+      "isSource": true,
+      "original": {
+        "value": "#d53f8c",
+        "type": "color"
+      },
+      "name": "core_600",
+      "attributes": {
+        "category": "core",
+        "type": "600"
+      },
+      "path": [
+        "core",
+        "600"
+      ]
+    },
+    "700": {
+      "value": "#b83280",
+      "type": "color",
+      "filePath": "tokens/figma-design-token/tokens.json",
+      "isSource": true,
+      "original": {
+        "value": "#b83280",
+        "type": "color"
+      },
+      "name": "core_700",
+      "attributes": {
+        "category": "core",
+        "type": "700"
+      },
+      "path": [
+        "core",
+        "700"
+      ]
+    },
+    "800": {
+      "value": "#97266d",
+      "type": "color",
+      "filePath": "tokens/figma-design-token/tokens.json",
+      "isSource": true,
+      "original": {
+        "value": "#97266d",
+        "type": "color"
+      },
+      "name": "core_800",
+      "attributes": {
+        "category": "core",
+        "type": "800"
+      },
+      "path": [
+        "core",
+        "800"
+      ]
+    },
+    "900": {
+      "value": "#702459",
+      "type": "color",
+      "filePath": "tokens/figma-design-token/tokens.json",
+      "isSource": true,
+      "original": {
+        "value": "#702459",
+        "type": "color"
+      },
+      "name": "core_900",
+      "attributes": {
+        "category": "core",
+        "type": "900"
+      },
+      "path": [
+        "core",
+        "900"
+      ]
+    },
+    "colors": {
+      "black": {
+        "value": "#000000",
+        "type": "color",
+        "filePath": "tokens/figma-design-token/tokens.json",
+        "isSource": true,
+        "original": {
+          "value": "#000000",
+          "type": "color"
+        },
+        "name": "core_colors_black",
+        "attributes": {
+          "category": "core",
+          "type": "colors",
+          "item": "black"
+        },
+        "path": [
+          "core",
+          "colors",
+          "black"
+        ]
+      },
+      "white": {
+        "value": "#ffffff",
+        "type": "color",
+        "filePath": "tokens/figma-design-token/tokens.json",
+        "isSource": true,
+        "original": {
+          "value": "#ffffff",
+          "type": "color"
+        },
+        "name": "core_colors_white",
+        "attributes": {
+          "category": "core",
+          "type": "colors",
+          "item": "white"
+        },
+        "path": [
+          "core",
+          "colors",
+          "white"
+        ]
+      },
+      "gray": {
+        "100": {
+          "value": "#f7fafc",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#f7fafc",
+            "type": "color"
+          },
+          "name": "core_colors_gray_100",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "gray",
+            "subitem": "100"
+          },
+          "path": [
+            "core",
+            "colors",
+            "gray",
+            "100"
+          ]
+        },
+        "200": {
+          "value": "#edf2f7",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#edf2f7",
+            "type": "color"
+          },
+          "name": "core_colors_gray_200",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "gray",
+            "subitem": "200"
+          },
+          "path": [
+            "core",
+            "colors",
+            "gray",
+            "200"
+          ]
+        },
+        "300": {
+          "value": "#e2e8f0",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#e2e8f0",
+            "type": "color"
+          },
+          "name": "core_colors_gray_300",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "gray",
+            "subitem": "300"
+          },
+          "path": [
+            "core",
+            "colors",
+            "gray",
+            "300"
+          ]
+        },
+        "400": {
+          "value": "#cbd5e0",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#cbd5e0",
+            "type": "color"
+          },
+          "name": "core_colors_gray_400",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "gray",
+            "subitem": "400"
+          },
+          "path": [
+            "core",
+            "colors",
+            "gray",
+            "400"
+          ]
+        },
+        "500": {
+          "value": "#a0aec0",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#a0aec0",
+            "type": "color"
+          },
+          "name": "core_colors_gray_500",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "gray",
+            "subitem": "500"
+          },
+          "path": [
+            "core",
+            "colors",
+            "gray",
+            "500"
+          ]
+        },
+        "600": {
+          "value": "#718096",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#718096",
+            "type": "color"
+          },
+          "name": "core_colors_gray_600",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "gray",
+            "subitem": "600"
+          },
+          "path": [
+            "core",
+            "colors",
+            "gray",
+            "600"
+          ]
+        },
+        "700": {
+          "value": "#4a5568",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#4a5568",
+            "type": "color"
+          },
+          "name": "core_colors_gray_700",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "gray",
+            "subitem": "700"
+          },
+          "path": [
+            "core",
+            "colors",
+            "gray",
+            "700"
+          ]
+        },
+        "800": {
+          "value": "#2d3748",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#2d3748",
+            "type": "color"
+          },
+          "name": "core_colors_gray_800",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "gray",
+            "subitem": "800"
+          },
+          "path": [
+            "core",
+            "colors",
+            "gray",
+            "800"
+          ]
+        },
+        "900": {
+          "value": "#1a202c",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#1a202c",
+            "type": "color"
+          },
+          "name": "core_colors_gray_900",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "gray",
+            "subitem": "900"
+          },
+          "path": [
+            "core",
+            "colors",
+            "gray",
+            "900"
+          ]
+        }
+      },
+      "red": {
+        "100": {
+          "value": "#fff5f5",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#fff5f5",
+            "type": "color"
+          },
+          "name": "core_colors_red_100",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "red",
+            "subitem": "100"
+          },
+          "path": [
+            "core",
+            "colors",
+            "red",
+            "100"
+          ]
+        },
+        "200": {
+          "value": "#fed7d7",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#fed7d7",
+            "type": "color"
+          },
+          "name": "core_colors_red_200",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "red",
+            "subitem": "200"
+          },
+          "path": [
+            "core",
+            "colors",
+            "red",
+            "200"
+          ]
+        },
+        "300": {
+          "value": "#feb2b2",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#feb2b2",
+            "type": "color"
+          },
+          "name": "core_colors_red_300",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "red",
+            "subitem": "300"
+          },
+          "path": [
+            "core",
+            "colors",
+            "red",
+            "300"
+          ]
+        },
+        "400": {
+          "value": "#fc8181",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#fc8181",
+            "type": "color"
+          },
+          "name": "core_colors_red_400",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "red",
+            "subitem": "400"
+          },
+          "path": [
+            "core",
+            "colors",
+            "red",
+            "400"
+          ]
+        },
+        "500": {
+          "value": "#f56565",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#f56565",
+            "type": "color"
+          },
+          "name": "core_colors_red_500",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "red",
+            "subitem": "500"
+          },
+          "path": [
+            "core",
+            "colors",
+            "red",
+            "500"
+          ]
+        },
+        "600": {
+          "value": "#e53e3e",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#e53e3e",
+            "type": "color"
+          },
+          "name": "core_colors_red_600",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "red",
+            "subitem": "600"
+          },
+          "path": [
+            "core",
+            "colors",
+            "red",
+            "600"
+          ]
+        },
+        "700": {
+          "value": "#c53030",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#c53030",
+            "type": "color"
+          },
+          "name": "core_colors_red_700",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "red",
+            "subitem": "700"
+          },
+          "path": [
+            "core",
+            "colors",
+            "red",
+            "700"
+          ]
+        },
+        "800": {
+          "value": "#9b2c2c",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#9b2c2c",
+            "type": "color"
+          },
+          "name": "core_colors_red_800",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "red",
+            "subitem": "800"
+          },
+          "path": [
+            "core",
+            "colors",
+            "red",
+            "800"
+          ]
+        },
+        "900": {
+          "value": "#742a2a",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#742a2a",
+            "type": "color"
+          },
+          "name": "core_colors_red_900",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "red",
+            "subitem": "900"
+          },
+          "path": [
+            "core",
+            "colors",
+            "red",
+            "900"
+          ]
+        }
+      },
+      "orange": {
+        "100": {
+          "value": "#fffaf0",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#fffaf0",
+            "type": "color"
+          },
+          "name": "core_colors_orange_100",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "orange",
+            "subitem": "100"
+          },
+          "path": [
+            "core",
+            "colors",
+            "orange",
+            "100"
+          ]
+        },
+        "200": {
+          "value": "#feebc8",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#feebc8",
+            "type": "color"
+          },
+          "name": "core_colors_orange_200",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "orange",
+            "subitem": "200"
+          },
+          "path": [
+            "core",
+            "colors",
+            "orange",
+            "200"
+          ]
+        },
+        "300": {
+          "value": "#fbd38d",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#fbd38d",
+            "type": "color"
+          },
+          "name": "core_colors_orange_300",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "orange",
+            "subitem": "300"
+          },
+          "path": [
+            "core",
+            "colors",
+            "orange",
+            "300"
+          ]
+        },
+        "400": {
+          "value": "#f6ad55",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#f6ad55",
+            "type": "color"
+          },
+          "name": "core_colors_orange_400",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "orange",
+            "subitem": "400"
+          },
+          "path": [
+            "core",
+            "colors",
+            "orange",
+            "400"
+          ]
+        },
+        "500": {
+          "value": "#ed8936",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#ed8936",
+            "type": "color"
+          },
+          "name": "core_colors_orange_500",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "orange",
+            "subitem": "500"
+          },
+          "path": [
+            "core",
+            "colors",
+            "orange",
+            "500"
+          ]
+        },
+        "600": {
+          "value": "#dd6b20",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#dd6b20",
+            "type": "color"
+          },
+          "name": "core_colors_orange_600",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "orange",
+            "subitem": "600"
+          },
+          "path": [
+            "core",
+            "colors",
+            "orange",
+            "600"
+          ]
+        },
+        "700": {
+          "value": "#c05621",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#c05621",
+            "type": "color"
+          },
+          "name": "core_colors_orange_700",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "orange",
+            "subitem": "700"
+          },
+          "path": [
+            "core",
+            "colors",
+            "orange",
+            "700"
+          ]
+        },
+        "800": {
+          "value": "#9c4221",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#9c4221",
+            "type": "color"
+          },
+          "name": "core_colors_orange_800",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "orange",
+            "subitem": "800"
+          },
+          "path": [
+            "core",
+            "colors",
+            "orange",
+            "800"
+          ]
+        },
+        "900": {
+          "value": "#7b341e",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#7b341e",
+            "type": "color"
+          },
+          "name": "core_colors_orange_900",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "orange",
+            "subitem": "900"
+          },
+          "path": [
+            "core",
+            "colors",
+            "orange",
+            "900"
+          ]
+        }
+      },
+      "yellow": {
+        "100": {
+          "value": "#fffff0",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#fffff0",
+            "type": "color"
+          },
+          "name": "core_colors_yellow_100",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "yellow",
+            "subitem": "100"
+          },
+          "path": [
+            "core",
+            "colors",
+            "yellow",
+            "100"
+          ]
+        },
+        "200": {
+          "value": "#fefcbf",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#fefcbf",
+            "type": "color"
+          },
+          "name": "core_colors_yellow_200",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "yellow",
+            "subitem": "200"
+          },
+          "path": [
+            "core",
+            "colors",
+            "yellow",
+            "200"
+          ]
+        },
+        "300": {
+          "value": "#faf089",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#faf089",
+            "type": "color"
+          },
+          "name": "core_colors_yellow_300",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "yellow",
+            "subitem": "300"
+          },
+          "path": [
+            "core",
+            "colors",
+            "yellow",
+            "300"
+          ]
+        },
+        "400": {
+          "value": "#f6e05e",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#f6e05e",
+            "type": "color"
+          },
+          "name": "core_colors_yellow_400",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "yellow",
+            "subitem": "400"
+          },
+          "path": [
+            "core",
+            "colors",
+            "yellow",
+            "400"
+          ]
+        },
+        "500": {
+          "value": "#ecc94b",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#ecc94b",
+            "type": "color"
+          },
+          "name": "core_colors_yellow_500",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "yellow",
+            "subitem": "500"
+          },
+          "path": [
+            "core",
+            "colors",
+            "yellow",
+            "500"
+          ]
+        },
+        "600": {
+          "value": "#d69e2e",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#d69e2e",
+            "type": "color"
+          },
+          "name": "core_colors_yellow_600",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "yellow",
+            "subitem": "600"
+          },
+          "path": [
+            "core",
+            "colors",
+            "yellow",
+            "600"
+          ]
+        },
+        "700": {
+          "value": "#b7791f",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#b7791f",
+            "type": "color"
+          },
+          "name": "core_colors_yellow_700",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "yellow",
+            "subitem": "700"
+          },
+          "path": [
+            "core",
+            "colors",
+            "yellow",
+            "700"
+          ]
+        },
+        "800": {
+          "value": "#975a16",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#975a16",
+            "type": "color"
+          },
+          "name": "core_colors_yellow_800",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "yellow",
+            "subitem": "800"
+          },
+          "path": [
+            "core",
+            "colors",
+            "yellow",
+            "800"
+          ]
+        },
+        "900": {
+          "value": "#744210",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#744210",
+            "type": "color"
+          },
+          "name": "core_colors_yellow_900",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "yellow",
+            "subitem": "900"
+          },
+          "path": [
+            "core",
+            "colors",
+            "yellow",
+            "900"
+          ]
+        }
+      },
+      "green": {
+        "100": {
+          "value": "#f0fff4",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#f0fff4",
+            "type": "color"
+          },
+          "name": "core_colors_green_100",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "green",
+            "subitem": "100"
+          },
+          "path": [
+            "core",
+            "colors",
+            "green",
+            "100"
+          ]
+        },
+        "200": {
+          "value": "#c6f6d5",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#c6f6d5",
+            "type": "color"
+          },
+          "name": "core_colors_green_200",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "green",
+            "subitem": "200"
+          },
+          "path": [
+            "core",
+            "colors",
+            "green",
+            "200"
+          ]
+        },
+        "300": {
+          "value": "#9ae6b4",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#9ae6b4",
+            "type": "color"
+          },
+          "name": "core_colors_green_300",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "green",
+            "subitem": "300"
+          },
+          "path": [
+            "core",
+            "colors",
+            "green",
+            "300"
+          ]
+        },
+        "400": {
+          "value": "#68d391",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#68d391",
+            "type": "color"
+          },
+          "name": "core_colors_green_400",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "green",
+            "subitem": "400"
+          },
+          "path": [
+            "core",
+            "colors",
+            "green",
+            "400"
+          ]
+        },
+        "500": {
+          "value": "#48bb78",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#48bb78",
+            "type": "color"
+          },
+          "name": "core_colors_green_500",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "green",
+            "subitem": "500"
+          },
+          "path": [
+            "core",
+            "colors",
+            "green",
+            "500"
+          ]
+        },
+        "600": {
+          "value": "#38a169",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#38a169",
+            "type": "color"
+          },
+          "name": "core_colors_green_600",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "green",
+            "subitem": "600"
+          },
+          "path": [
+            "core",
+            "colors",
+            "green",
+            "600"
+          ]
+        },
+        "700": {
+          "value": "#2f855a",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#2f855a",
+            "type": "color"
+          },
+          "name": "core_colors_green_700",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "green",
+            "subitem": "700"
+          },
+          "path": [
+            "core",
+            "colors",
+            "green",
+            "700"
+          ]
+        },
+        "800": {
+          "value": "#276749",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#276749",
+            "type": "color"
+          },
+          "name": "core_colors_green_800",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "green",
+            "subitem": "800"
+          },
+          "path": [
+            "core",
+            "colors",
+            "green",
+            "800"
+          ]
+        },
+        "900": {
+          "value": "#22543d",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#22543d",
+            "type": "color"
+          },
+          "name": "core_colors_green_900",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "green",
+            "subitem": "900"
+          },
+          "path": [
+            "core",
+            "colors",
+            "green",
+            "900"
+          ]
+        }
+      },
+      "teal": {
+        "100": {
+          "value": "#e6fffa",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#e6fffa",
+            "type": "color"
+          },
+          "name": "core_colors_teal_100",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "teal",
+            "subitem": "100"
+          },
+          "path": [
+            "core",
+            "colors",
+            "teal",
+            "100"
+          ]
+        },
+        "200": {
+          "value": "#b2f5ea",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#b2f5ea",
+            "type": "color"
+          },
+          "name": "core_colors_teal_200",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "teal",
+            "subitem": "200"
+          },
+          "path": [
+            "core",
+            "colors",
+            "teal",
+            "200"
+          ]
+        },
+        "300": {
+          "value": "#81e6d9",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#81e6d9",
+            "type": "color"
+          },
+          "name": "core_colors_teal_300",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "teal",
+            "subitem": "300"
+          },
+          "path": [
+            "core",
+            "colors",
+            "teal",
+            "300"
+          ]
+        },
+        "400": {
+          "value": "#4fd1c5",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#4fd1c5",
+            "type": "color"
+          },
+          "name": "core_colors_teal_400",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "teal",
+            "subitem": "400"
+          },
+          "path": [
+            "core",
+            "colors",
+            "teal",
+            "400"
+          ]
+        },
+        "500": {
+          "value": "#38b2ac",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#38b2ac",
+            "type": "color"
+          },
+          "name": "core_colors_teal_500",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "teal",
+            "subitem": "500"
+          },
+          "path": [
+            "core",
+            "colors",
+            "teal",
+            "500"
+          ]
+        },
+        "600": {
+          "value": "#319795",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#319795",
+            "type": "color"
+          },
+          "name": "core_colors_teal_600",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "teal",
+            "subitem": "600"
+          },
+          "path": [
+            "core",
+            "colors",
+            "teal",
+            "600"
+          ]
+        },
+        "700": {
+          "value": "#2c7a7b",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#2c7a7b",
+            "type": "color"
+          },
+          "name": "core_colors_teal_700",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "teal",
+            "subitem": "700"
+          },
+          "path": [
+            "core",
+            "colors",
+            "teal",
+            "700"
+          ]
+        },
+        "800": {
+          "value": "#285e61",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#285e61",
+            "type": "color"
+          },
+          "name": "core_colors_teal_800",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "teal",
+            "subitem": "800"
+          },
+          "path": [
+            "core",
+            "colors",
+            "teal",
+            "800"
+          ]
+        },
+        "900": {
+          "value": "#234e52",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#234e52",
+            "type": "color"
+          },
+          "name": "core_colors_teal_900",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "teal",
+            "subitem": "900"
+          },
+          "path": [
+            "core",
+            "colors",
+            "teal",
+            "900"
+          ]
+        }
+      },
+      "blue": {
+        "100": {
+          "value": "#ebf8ff",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#ebf8ff",
+            "type": "color"
+          },
+          "name": "core_colors_blue_100",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "blue",
+            "subitem": "100"
+          },
+          "path": [
+            "core",
+            "colors",
+            "blue",
+            "100"
+          ]
+        },
+        "200": {
+          "value": "#bee3f8",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#bee3f8",
+            "type": "color"
+          },
+          "name": "core_colors_blue_200",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "blue",
+            "subitem": "200"
+          },
+          "path": [
+            "core",
+            "colors",
+            "blue",
+            "200"
+          ]
+        },
+        "300": {
+          "value": "#90cdf4",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#90cdf4",
+            "type": "color"
+          },
+          "name": "core_colors_blue_300",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "blue",
+            "subitem": "300"
+          },
+          "path": [
+            "core",
+            "colors",
+            "blue",
+            "300"
+          ]
+        },
+        "400": {
+          "value": "#63b3ed",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#63b3ed",
+            "type": "color"
+          },
+          "name": "core_colors_blue_400",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "blue",
+            "subitem": "400"
+          },
+          "path": [
+            "core",
+            "colors",
+            "blue",
+            "400"
+          ]
+        },
+        "500": {
+          "value": "#4299e1",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#4299e1",
+            "type": "color"
+          },
+          "name": "core_colors_blue_500",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "blue",
+            "subitem": "500"
+          },
+          "path": [
+            "core",
+            "colors",
+            "blue",
+            "500"
+          ]
+        },
+        "600": {
+          "value": "#3182ce",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#3182ce",
+            "type": "color"
+          },
+          "name": "core_colors_blue_600",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "blue",
+            "subitem": "600"
+          },
+          "path": [
+            "core",
+            "colors",
+            "blue",
+            "600"
+          ]
+        },
+        "700": {
+          "value": "#2b6cb0",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#2b6cb0",
+            "type": "color"
+          },
+          "name": "core_colors_blue_700",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "blue",
+            "subitem": "700"
+          },
+          "path": [
+            "core",
+            "colors",
+            "blue",
+            "700"
+          ]
+        },
+        "800": {
+          "value": "#2c5282",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#2c5282",
+            "type": "color"
+          },
+          "name": "core_colors_blue_800",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "blue",
+            "subitem": "800"
+          },
+          "path": [
+            "core",
+            "colors",
+            "blue",
+            "800"
+          ]
+        },
+        "900": {
+          "value": "#2a4365",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#2a4365",
+            "type": "color"
+          },
+          "name": "core_colors_blue_900",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "blue",
+            "subitem": "900"
+          },
+          "path": [
+            "core",
+            "colors",
+            "blue",
+            "900"
+          ]
+        }
+      },
+      "indigo": {
+        "100": {
+          "value": "#ebf4ff",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#ebf4ff",
+            "type": "color"
+          },
+          "name": "core_colors_indigo_100",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "indigo",
+            "subitem": "100"
+          },
+          "path": [
+            "core",
+            "colors",
+            "indigo",
+            "100"
+          ]
+        },
+        "200": {
+          "value": "#c3dafe",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#c3dafe",
+            "type": "color"
+          },
+          "name": "core_colors_indigo_200",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "indigo",
+            "subitem": "200"
+          },
+          "path": [
+            "core",
+            "colors",
+            "indigo",
+            "200"
+          ]
+        },
+        "300": {
+          "value": "#a3bffa",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#a3bffa",
+            "type": "color"
+          },
+          "name": "core_colors_indigo_300",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "indigo",
+            "subitem": "300"
+          },
+          "path": [
+            "core",
+            "colors",
+            "indigo",
+            "300"
+          ]
+        },
+        "400": {
+          "value": "#7f9cf5",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#7f9cf5",
+            "type": "color"
+          },
+          "name": "core_colors_indigo_400",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "indigo",
+            "subitem": "400"
+          },
+          "path": [
+            "core",
+            "colors",
+            "indigo",
+            "400"
+          ]
+        },
+        "500": {
+          "value": "#667eea",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#667eea",
+            "type": "color"
+          },
+          "name": "core_colors_indigo_500",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "indigo",
+            "subitem": "500"
+          },
+          "path": [
+            "core",
+            "colors",
+            "indigo",
+            "500"
+          ]
+        },
+        "600": {
+          "value": "#5a67d8",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#5a67d8",
+            "type": "color"
+          },
+          "name": "core_colors_indigo_600",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "indigo",
+            "subitem": "600"
+          },
+          "path": [
+            "core",
+            "colors",
+            "indigo",
+            "600"
+          ]
+        },
+        "700": {
+          "value": "#4c51bf",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#4c51bf",
+            "type": "color"
+          },
+          "name": "core_colors_indigo_700",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "indigo",
+            "subitem": "700"
+          },
+          "path": [
+            "core",
+            "colors",
+            "indigo",
+            "700"
+          ]
+        },
+        "800": {
+          "value": "#434190",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#434190",
+            "type": "color"
+          },
+          "name": "core_colors_indigo_800",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "indigo",
+            "subitem": "800"
+          },
+          "path": [
+            "core",
+            "colors",
+            "indigo",
+            "800"
+          ]
+        },
+        "900": {
+          "value": "#3c366b",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#3c366b",
+            "type": "color"
+          },
+          "name": "core_colors_indigo_900",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "indigo",
+            "subitem": "900"
+          },
+          "path": [
+            "core",
+            "colors",
+            "indigo",
+            "900"
+          ]
+        }
+      },
+      "purple": {
+        "100": {
+          "value": "#faf5ff",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#faf5ff",
+            "type": "color"
+          },
+          "name": "core_colors_purple_100",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "purple",
+            "subitem": "100"
+          },
+          "path": [
+            "core",
+            "colors",
+            "purple",
+            "100"
+          ]
+        },
+        "200": {
+          "value": "#e9d8fd",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#e9d8fd",
+            "type": "color"
+          },
+          "name": "core_colors_purple_200",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "purple",
+            "subitem": "200"
+          },
+          "path": [
+            "core",
+            "colors",
+            "purple",
+            "200"
+          ]
+        },
+        "300": {
+          "value": "#d6bcfa",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#d6bcfa",
+            "type": "color"
+          },
+          "name": "core_colors_purple_300",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "purple",
+            "subitem": "300"
+          },
+          "path": [
+            "core",
+            "colors",
+            "purple",
+            "300"
+          ]
+        },
+        "400": {
+          "value": "#b794f4",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#b794f4",
+            "type": "color"
+          },
+          "name": "core_colors_purple_400",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "purple",
+            "subitem": "400"
+          },
+          "path": [
+            "core",
+            "colors",
+            "purple",
+            "400"
+          ]
+        },
+        "500": {
+          "value": "#9f7aea",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#9f7aea",
+            "type": "color"
+          },
+          "name": "core_colors_purple_500",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "purple",
+            "subitem": "500"
+          },
+          "path": [
+            "core",
+            "colors",
+            "purple",
+            "500"
+          ]
+        },
+        "600": {
+          "value": "#805ad5",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#805ad5",
+            "type": "color"
+          },
+          "name": "core_colors_purple_600",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "purple",
+            "subitem": "600"
+          },
+          "path": [
+            "core",
+            "colors",
+            "purple",
+            "600"
+          ]
+        },
+        "700": {
+          "value": "#6b46c1",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#6b46c1",
+            "type": "color"
+          },
+          "name": "core_colors_purple_700",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "purple",
+            "subitem": "700"
+          },
+          "path": [
+            "core",
+            "colors",
+            "purple",
+            "700"
+          ]
+        },
+        "800": {
+          "value": "#553c9a",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#553c9a",
+            "type": "color"
+          },
+          "name": "core_colors_purple_800",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "purple",
+            "subitem": "800"
+          },
+          "path": [
+            "core",
+            "colors",
+            "purple",
+            "800"
+          ]
+        },
+        "900": {
+          "value": "#44337a",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#44337a",
+            "type": "color"
+          },
+          "name": "core_colors_purple_900",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "purple",
+            "subitem": "900"
+          },
+          "path": [
+            "core",
+            "colors",
+            "purple",
+            "900"
+          ]
+        }
+      },
+      "pink": {
+        "100": {
+          "value": "#fff5f7",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#fff5f7",
+            "type": "color"
+          },
+          "name": "core_colors_pink_100",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "pink",
+            "subitem": "100"
+          },
+          "path": [
+            "core",
+            "colors",
+            "pink",
+            "100"
+          ]
+        },
+        "200": {
+          "value": "#fed7e2",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#fed7e2",
+            "type": "color"
+          },
+          "name": "core_colors_pink_200",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "pink",
+            "subitem": "200"
+          },
+          "path": [
+            "core",
+            "colors",
+            "pink",
+            "200"
+          ]
+        },
+        "300": {
+          "value": "#fbb6ce",
+          "type": "color",
+          "filePath": "tokens/figma-design-token/tokens.json",
+          "isSource": true,
+          "original": {
+            "value": "#fbb6ce",
+            "type": "color"
+          },
+          "name": "core_colors_pink_300",
+          "attributes": {
+            "category": "core",
+            "type": "colors",
+            "item": "pink",
+            "subitem": "300"
+          },
+          "path": [
+            "core",
+            "colors",
+            "pink",
+            "300"
+          ]
+        }
+      }
+    }
+  },
   "font": {
     "family": {
       "base": {
