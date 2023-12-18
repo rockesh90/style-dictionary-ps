@@ -26730,12 +26730,12 @@
     },
     "colors": {
       "black": {
-        "value": "#000000",
+        "value": "#000",
         "type": "color",
         "filePath": "tokens/figma-design-token/tokens.json",
         "isSource": true,
         "original": {
-          "value": "#000000",
+          "value": "#000",
           "type": "color"
         },
         "name": "core_colors_black",
@@ -26751,12 +26751,12 @@
         ]
       },
       "white": {
-        "value": "#ffffff",
+        "value": "#702459",
         "type": "color",
         "filePath": "tokens/figma-design-token/tokens.json",
         "isSource": true,
         "original": {
-          "value": "#ffffff",
+          "value": "#702459",
           "type": "color"
         },
         "name": "core_colors_white",
@@ -28724,6 +28724,12 @@
         }
       }
     }
+  },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "core"
+    ]
   },
   "font": {
     "family": {
