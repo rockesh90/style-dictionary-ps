@@ -33,7 +33,7 @@ object StyleDictionaryHelper {
   var DICTIONARY_JSON: JSONObject? = null
 
   fun loadButtonBackgroundColor(): Color {
-    val property = getProperty(path = arrayListOf("button", "primary", "background"))
+    val property = getProperty(path = arrayListOf("core", "colors", "white"))
     return Color(android.graphics.Color.parseColor(property.value))
   }
 
