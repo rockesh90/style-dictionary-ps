@@ -26751,12 +26751,12 @@
         ]
       },
       "white": {
-        "value": "#702459",
+        "value": "#ffffff",
         "type": "color",
         "filePath": "tokens/figma-design-token/tokens.json",
         "isSource": true,
         "original": {
-          "value": "#702459",
+          "value": "#ffffff",
           "type": "color"
         },
         "name": "core_colors_white",
