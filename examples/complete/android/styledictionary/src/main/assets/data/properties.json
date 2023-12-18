@@ -28731,48 +28731,6 @@
       "core"
     ]
   },
-  "font": {
-    "family": {
-      "base": {
-        "value": "Open Sans",
-        "filePath": "tokens/font.json",
-        "isSource": true,
-        "original": {
-          "value": "{asset.font.opensans.name.value}"
-        },
-        "name": "font_family_base",
-        "attributes": {
-          "category": "font",
-          "type": "family",
-          "item": "base"
-        },
-        "path": [
-          "font",
-          "family",
-          "base"
-        ]
-      },
-      "icons": {
-        "value": "MaterialIcons",
-        "filePath": "tokens/font.json",
-        "isSource": true,
-        "original": {
-          "value": "{asset.font.icon.name.value}"
-        },
-        "name": "font_family_icons",
-        "attributes": {
-          "category": "font",
-          "type": "family",
-          "item": "icons"
-        },
-        "path": [
-          "font",
-          "family",
-          "icons"
-        ]
-      }
-    }
-  },
   "size": {
     "font": {
       "tiny": {
@@ -29157,6 +29115,48 @@
           "size",
           "padding",
           "base"
+        ]
+      }
+    }
+  },
+  "font": {
+    "family": {
+      "base": {
+        "value": "Open Sans",
+        "filePath": "tokens/font.json",
+        "isSource": true,
+        "original": {
+          "value": "{asset.font.opensans.name.value}"
+        },
+        "name": "font_family_base",
+        "attributes": {
+          "category": "font",
+          "type": "family",
+          "item": "base"
+        },
+        "path": [
+          "font",
+          "family",
+          "base"
+        ]
+      },
+      "icons": {
+        "value": "MaterialIcons",
+        "filePath": "tokens/font.json",
+        "isSource": true,
+        "original": {
+          "value": "{asset.font.icon.name.value}"
+        },
+        "name": "font_family_icons",
+        "attributes": {
+          "category": "font",
+          "type": "family",
+          "item": "icons"
+        },
+        "path": [
+          "font",
+          "family",
+          "icons"
         ]
       }
     }
