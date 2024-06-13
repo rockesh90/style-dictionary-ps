@@ -20,7 +20,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.amazon.styledictionaryexample.R
-import com.amazon.styledictionaryexample.models.Property
+import models.Property
 import com.amazon.styledictionaryexample.property.PropertyDetailActivity
 import com.amazon.styledictionaryexample.util.StringHelper
 import com.amazon.styledictionaryexample.util.StyleDictionaryHelper

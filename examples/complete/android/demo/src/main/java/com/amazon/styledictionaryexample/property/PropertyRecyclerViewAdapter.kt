@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.amazon.styledictionaryexample.R
-import com.amazon.styledictionaryexample.models.StyleDictionaryNode
 import com.amazon.styledictionaryexample.property.PropertyFragment.OnListFragmentInteractionListener
+import models.StyleDictionaryNode
 
 /**
  * [RecyclerView.Adapter] that can display a [StyleDictionaryNode] and makes a call to the
@@ -15,7 +15,7 @@ import com.amazon.styledictionaryexample.property.PropertyFragment.OnListFragmen
  */
 class PropertyRecyclerViewAdapter(
   private val values: List<StyleDictionaryNode>,
-  private val listener: OnListFragmentInteractionListener?
+  private val listener: OnListFragmentInteractionListener?,
 ) : RecyclerView.Adapter<PropertyRecyclerViewAdapter.ViewHolder>() {
   override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
     val view = LayoutInflater.from(parent.context)
@@ -37,7 +37,8 @@ class PropertyRecyclerViewAdapter(
   }
 
   inner class ViewHolder(val view: View) : RecyclerView.ViewHolder(
-    view) {
+    view,
+  ) {
     val idView: TextView = view.findViewById<View>(R.id.id) as TextView
     val contentView: TextView = view.findViewById<View>(R.id.content) as TextView
 
@@ -46,6 +47,5 @@ class PropertyRecyclerViewAdapter(
     override fun toString(): String {
       return super.toString() + " '" + contentView.text + "'"
     }
-
   }
 }

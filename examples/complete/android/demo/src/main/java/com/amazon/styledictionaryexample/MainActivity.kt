@@ -13,14 +13,13 @@
 package com.amazon.styledictionaryexample
 
 import android.content.Intent
-import android.graphics.Typeface
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import com.amazon.styledictionaryexample.color.ColorsActivity
 import com.amazon.styledictionaryexample.icon.IconListActivity
 import com.amazon.styledictionaryexample.property.PropertiesActivity
-import com.amazon.styledictionaryexample.util.StyleDictionaryHelper
+import utils.StyleDictionaryHelper
 
 @Suppress("UNUSED_PARAMETER")
 class MainActivity : BaseActivity() {

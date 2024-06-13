@@ -19,9 +19,9 @@ import android.view.Gravity
 import androidx.fragment.app.Fragment
 import com.amazon.styledictionaryexample.BaseActivity
 import com.amazon.styledictionaryexample.R
-import com.amazon.styledictionaryexample.models.StyleDictionaryNode
+import models.StyleDictionaryNode
 import com.amazon.styledictionaryexample.property.PropertyFragment.OnListFragmentInteractionListener
-import com.amazon.styledictionaryexample.util.StyleDictionaryHelper
+import utils.StyleDictionaryHelper
 import java.util.*
 
 class PropertiesActivity : BaseActivity(), OnListFragmentInteractionListener {

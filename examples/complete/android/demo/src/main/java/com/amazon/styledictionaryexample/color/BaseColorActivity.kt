@@ -20,9 +20,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.amazon.styledictionaryexample.BaseActivity
 import com.amazon.styledictionaryexample.R
+import com.amazon.styledictionary.R as CR
 import com.amazon.styledictionaryexample.color.BaseColorListItem.BaseColorHeaderItem
 import com.amazon.styledictionaryexample.color.BaseColorListItem.BaseColorItem
-import com.amazon.styledictionaryexample.models.StyleDictionaryNode
+import models.StyleDictionaryNode
 import com.amazon.styledictionaryexample.util.StyleDictionaryHelper
 import java.util.*
 
@@ -96,9 +97,9 @@ class BaseColorActivity : BaseActivity() {
 
         val id = resources.getIdentifier(property.name, "color", packageName)
         val fontColor: Int = if (property.attributes["font"] == "inverse") {
-          resources.getColor(R.color.color_font_inverse_base, null)
+          resources.getColor(CR.color.color_font_inverse_base, null)
         } else {
-          resources.getColor(R.color.color_font_base, null)
+          resources.getColor(CR.color.color_font_base, null)
         }
 
         holder.titleView.text = title

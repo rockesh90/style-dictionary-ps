@@ -8,9 +8,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.amazon.styledictionaryexample.R
-import com.amazon.styledictionaryexample.models.StyleDictionaryNode
 import com.amazon.styledictionaryexample.property.PropertyFragment.OnListFragmentInteractionListener
-import com.amazon.styledictionaryexample.util.StyleDictionaryHelper
+import models.StyleDictionaryNode
+import utils.StyleDictionaryHelper
 import java.util.*
 
 /**
@@ -28,7 +28,7 @@ class PropertyFragment : Fragment() {
   override fun onCreateView(
     inflater: LayoutInflater,
     container: ViewGroup?,
-    savedInstanceState: Bundle?
+    savedInstanceState: Bundle?,
   ): View? {
     val view = inflater.inflate(R.layout.fragment_property_list, container, false)
 
@@ -45,8 +45,9 @@ class PropertyFragment : Fragment() {
       context
     } else {
       throw RuntimeException(
-        context.toString()
-          + " must implement OnListFragmentInteractionListener")
+        context.toString() +
+          " must implement OnListFragmentInteractionListener",
+      )
     }
   }
 
@@ -75,5 +76,4 @@ class PropertyFragment : Fragment() {
       return fragment
     }
   }
-
 }
